@@ -10,6 +10,113 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <section class="wrapper">
+      <div class="inner">
+        <div class="main-content">
+          <h1 class="form-title">アカウント作成</h1>
+          <div class="columns is-fullWidth">
+            <div class="column is-halfWidth">
+              <a href="#" class="button-init button is-facebook is-fullWidth">Facebookでスタート</a>
+            </div>
+            <div class="column is-halfWidth">
+              <a href="#" class="button-init button is-google is-fullWidth">Googleでスタート</a>
+            </div>
+          </div>
+          <p class="default-text privacy">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          <div class="divider">
+            <p class="default-text divider-text">アカウント情報</p>
+          </div>
+          <form class="form-content" action="#" method="POST">
+            <div class="row name name-contents">
+              <div class="name-content is-halfWidth">
+                <p class="label-text">名字<span class="alert"> ※</span></p>
+                <input type="text" class="input-init input-area" required>
+              </div>
+              <div class="name-content is-halfWidth">
+                <p class="label-text">名前<span class="alert"> ※</span></p>
+                <input type="text" class="input-init input-area" required>
+              </div>
+            </div>
+            <div class="row gender">
+              <p class="label-text">性別</p>
+              <div class="gender-contents">
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male">
+                  <span class="select-text">男性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female">
+                  <span class="select-text">女性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other">
+                  <span class="select-text">その他</span>
+                </label>
+              </div>
+            </div>
+            <div class="row origin is-halfWidth">
+              <p class="label-text">出身</p>
+              <div class="select-area">
+                <select name="origin" id="origin" class="input-init input-area">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="row email is-fullWidth">
+              <p class="label-text">Eメール<span class="alert"> ※</span></p>
+              <input type="email" class="input-init input-area" name="email" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="row tell-number is-fullWidth">
+              <p class="label-text">電話番号</p>
+              <input type="tel" class="input-init input-area" name="tel" placeholder="ex) 09012345678" required>
+            </div>
+            <div class="row password is-fullWidth">
+              <p class="label-text">パスワード<span class="alert"> ※</span></p>
+              <input type="password" class="input-init input-area" name="password" required>
+            </div>
+            <div class="row password is-fullWidth">
+              <p class="label-text">パスワード(確認用)<span class="alert"> ※</span></p>
+              <input type="text" class="input-init input-area" name="password-confirm" required>
+            </div>
+            <div class="row course">
+              <p class="label-text">希望コース</p>
+              <div class="course-contents">
+                <div class="course-content">
+                  <input type="checkbox" name="course" value="frontend" id="frontend">
+                  <label class="select-text course-text" for="frontend">フロントエンド</label>
+                </div>
+                <div class="course-content">
+                  <input type="checkbox" name="course" value="backend" id="backend">
+                  <label class="select-text course-text" for="backend">バックエンド</lavel>
+                </div>
+                <div class="course-content">
+                  <input type="checkbox" name="course" value="app" id="app">
+                  <label class="select-text course-text" for="app">アプリ</label>
+                </div>
+              </div>
+            </div>
+            <div class="row remarks is-fullWidth">
+              <p class="label-text">備考</p>
+              <textarea name="remarks" id="remarks" class="input-init input-area" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="row">
+              <input type="submit" value="アカウント作成" class="input-init button submit-button is-fullWidth">
+            </div>
+            <p class="text agreement">
+              アカウントを作成することにより、
+              <a href="#" class="link">利用規約</a>
+              と<a href="#" class="link">プライバシーポリシー</a>に同意するものとします。
+            </p>
+          </form>
+        </div>
+        <div class="foot-part">
+          <p class="text login">すでにアカウントをお持ちですか？ <a href="#" class="link">ログイン</a></p>
+          <a href="#" class="text link">認証メールが届きませんか？</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
