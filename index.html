@@ -30,11 +30,11 @@
             <div class="row name name-contents">
               <div class="name-content is-halfWidth">
                 <p class="label-text">名字<span class="alert"> ※</span></p>
-                <input type="text" class="input-init input-area" required>
+                <input type="text" class="input-init input-area" name="last-name" required> <!--inputタグにnameは必須-->
               </div>
               <div class="name-content is-halfWidth">
                 <p class="label-text">名前<span class="alert"> ※</span></p>
-                <input type="text" class="input-init input-area" required>
+                <input type="text" class="input-init input-area" name="first-name" required> <!--inputタグにname追加-->
               </div>
             </div>
             <div class="row gender">
@@ -71,7 +71,7 @@
             </div>
             <div class="row tell-number is-fullWidth">
               <p class="label-text">電話番号</p>
-              <input type="tel" class="input-init input-area" name="tel" placeholder="ex) 09012345678" required>
+              <input type="tel" class="input-init input-area" name="tel" placeholder="ex) 09012345678"> <!--電話番号は必須項目じゃないのでrequiredを削除-->
             </div>
             <div class="row password is-fullWidth">
               <p class="label-text">パスワード<span class="alert"> ※</span></p>
@@ -79,7 +79,7 @@
             </div>
             <div class="row password is-fullWidth">
               <p class="label-text">パスワード(確認用)<span class="alert"> ※</span></p>
-              <input type="text" class="input-init input-area" name="password-confirm" required>
+              <input type="password" class="input-init input-area" name="password-confirm" required> <!--入力を見えなくするためtypeはpasswordに変更-->
             </div>
             <div class="row course">
               <p class="label-text">希望コース</p>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="course-content">
                   <input type="checkbox" name="course" value="backend" id="backend">
-                  <label class="select-text course-text" for="backend">バックエンド</lavel>
+                  <label class="select-text course-text" for="backend">バックエンド</label> <!--スペルミス lavel→label-->
                 </div>
                 <div class="course-content">
                   <input type="checkbox" name="course" value="app" id="app">
