@@ -346,6 +346,11 @@
   color: #01bfbd;
 }
 
+.resend-mail {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
 .foot-part a:hover {
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
